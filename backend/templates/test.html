@@ -8,6 +8,11 @@
 <body>
 
     <h1>Hello world</h1>
+
+    {% for poll in polls %}
+        <h2>{{ poll.title }}</h2>
+        <p>{{ poll.description }}</p>
+    {% endfor %}
     
 </body>
 </html>
